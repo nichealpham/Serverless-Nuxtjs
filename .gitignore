@@ -1,18 +1,24 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+node_modules
+jspm_packages
 
-# Other files and folders
-.settings/
+# Yarn
+yarn-error.log
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Serverless directories
+.serverless
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# NuxtJS Directory
+.nuxt
+
+# logs
+npm-debug.log
+
+# Nuxt generate
+dist
+
+# Npm install
+package-lock.json
+
+# Others
+.idea
+.history
