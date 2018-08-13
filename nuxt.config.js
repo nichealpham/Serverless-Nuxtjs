@@ -71,8 +71,8 @@ module.exports = {
 	performance: {
 		gzip: false
 	},
-	router: {
-		base: '/dev/'
-	}
+	// router: {
+	// 	base: '/dev/'
+	// }
 };
 

@@ -8,8 +8,9 @@
 	"scripts": {
 		"dev": "NODE_ENV=Development nuxt",
 		"build": "NODE_ENV=Development nuxt build",
-		"express": "npm run build && node express.js",
-		"deploy": "npm run build && serverless deploy && rm -R .serverless/",
+		"start": "node express.js",
+		"deploy-sls": "npm run build && serverless deploy && rm -R .serverless/",
+		"deploy-gcp": "npm run build && gcloud app deploy",
 		"test-prod": "cd .serverless && nuxt start"
 	},
 	"dependencies": {
