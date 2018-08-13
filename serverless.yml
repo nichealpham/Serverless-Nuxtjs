@@ -12,6 +12,10 @@ package:
   include:
     - nuxt.config.js
     - serverless.yml
+    - handler.js
+    - .nuxt/**
+    - node_modules/**
+    - package.json
   exclude:
     - tests/**
     - src/**
@@ -36,7 +40,7 @@ plugins:
 
 custom:
   customDomain:
-    domainName: "sandrasoft.com" # Specify a new domain name to be created
+    domainName: "www.sandrasoft.com" # Specify a new domain name to be created
     stage: develop
     # certificateName: "*.mydomain.com" # Enter the Certificate name with that domain
     createRoute53Record: true

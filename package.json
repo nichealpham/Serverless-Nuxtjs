@@ -8,6 +8,7 @@
 	"scripts": {
 		"dev": "NODE_ENV=Development nuxt",
 		"build": "NODE_ENV=Development nuxt build",
+		"express": "npm run build && node express.js",
 		"deploy": "npm run build && serverless deploy && rm -R .serverless/",
 		"test-prod": "cd .serverless && nuxt start"
 	},
@@ -20,6 +21,8 @@
 		"nuxt": "^1.4.1",
 		"popper.js": "^1.14.3",
 		"serverless-http": "^1.6.0",
+		"node-sass": "^4.9.2",
+		"sass-loader": "^7.0.3",
 		"vue-cookie": "^1.1.4"
 	},
 	"devDependencies": {
@@ -32,8 +35,6 @@
 		"eslint-plugin-node": "^7.0.1",
 		"eslint-plugin-promise": "^3.8.0",
 		"eslint-plugin-standard": "^3.1.0",
-		"node-sass": "^4.9.2",
-		"sass-loader": "^7.0.3",
 		"serverless-domain-manager": "^2.6.0"
 	}
 }
